@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ProBusiness Solutions for professional business consulting services. Get in touch for a free consultation and discover how we can help your business grow.">
+    <meta name="keywords" content="contact, business consulting, free consultation, professional services">
+    <title>Contact Us - ProBusiness Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+            <h2>De Oracle</h2>
+        </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Get In Touch</h1>
+                <p>Ready to transform your business? Let's start the conversation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="strategy">Business Strategy</option>
+                                <option value="optimization">Process Optimization</option>
+                                <option value="development">Team Development</option>
+                                <option value="digital">Digital Transformation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project and how we can help..." required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I would like to receive updates and marketing communications
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <div class="contact-info-header">
+                        <h2>Contact Information</h2>
+                        <p>Get in touch with us through any of these channels.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Office Address</h3>
+                                <p>123 Business Avenue, Suite 100<br>New York, NY 10001<br>United States</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone Number</h3>
+                                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                                <p class="contact-note">Mon - Fri: 9:00 AM - 6:00 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Address</h3>
+                                <p><a href="mailto:info@probusiness.com">info@probusiness.com</a></p>
+                                <p class="contact-note">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Our Office</h2>
+                <p>Visit us at our convenient downtown location</p>
+            </div>
+            <div class="map-container">
+                <!-- Interactive Map Placeholder -->
+                <div class="map-placeholder">
+                    <svg width="100%" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="400" fill="#e2e8f0"/>
+                        <!-- Streets -->
+                        <line x1="0" y1="200" x2="800" y2="200" stroke="#94a3b8" stroke-width="4"/>
+                        <line x1="400" y1="0" x2="400" y2="400" stroke="#94a3b8" stroke-width="4"/>
+                        <line x1="0" y1="100" x2="800" y2="100" stroke="#cbd5e1" stroke-width="2"/>
+                        <line x1="0" y1="300" x2="800" y2="300" stroke="#cbd5e1" stroke-width="2"/>
+                        <line x1="200" y1="0" x2="200" y2="400" stroke="#cbd5e1" stroke-width="2"/>
+                        <line x1="600" y1="0" x2="600" y2="400" stroke="#cbd5e1" stroke-width="2"/>
+                        
+                        <!-- Buildings -->
+                        <rect x="150" y="120" width="100" height="80" fill="#64748b" opacity="0.7"/>
+                        <rect x="450" y="80" width="120" height="120" fill="#64748b" opacity="0.7"/>
+                        <rect x="320" y="220" width="80" height="80" fill="#64748b" opacity="0.7"/>
+                        <rect x="550" y="250" width="100" height="50" fill="#64748b" opacity="0.7"/>
+                        
+                        <!-- Our Office Building (highlighted) -->
+                        <rect x="350" y="150" width="100" height="100" fill="#3b82f6" opacity="0.8"/>
+                        <rect x="360" y="160" width="80" height="6" fill="white" opacity="0.8"/>
+                        <rect x="360" y="170" width="80" height="6" fill="white" opacity="0.8"/>
+                        <rect x="360" y="180" width="80" height="6" fill="white" opacity="0.8"/>
+                        
+                        <!-- Location Pin -->
+                        <circle cx="400" cy="150" r="15" fill="#ef4444"/>
+                        <circle cx="400" cy="150" r="8" fill="white"/>
+                        
+                        <!-- Parks/Green Spaces -->
+                        <circle cx="150" cy="320" r="40" fill="#10b981" opacity="0.6"/>
+                        <circle cx="650" cy="120" r="30" fill="#10b981" opacity="0.6"/>
+                        
+                        <!-- Labels -->
+                        <text x="400" y="130" text-anchor="middle" fill="#1e293b" font-family="Inter" font-size="14" font-weight="600">ProBusiness Solutions</text>
+                        <text x="400" y="280" text-anchor="middle" fill="#64748b" font-family="Inter" font-size="12">123 Business Avenue, Suite 100</text>
+                        <text x="400" y="295" text-anchor="middle" fill="#64748b" font-family="Inter" font-size="12">New York, NY 10001</text>
+                    </svg>
+                    <div class="map-overlay">
+                        <div class="map-info">
+                            <h3>Interactive Map</h3>
+                            <p>Click to open in Google Maps</p>
+                            <a href="https://maps.google.com/?q=123+Business+Avenue,+New+York,+NY+10001" target="_blank" class="btn btn-primary">Open in Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does a typical project take?</h3>
+                    <p>Project timelines vary depending on scope and complexity. Most projects range from 3-6 months, with some strategic initiatives taking up to 12 months for full implementation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you work with small businesses?</h3>
+                    <p>Absolutely! We work with businesses of all sizes, from startups to Fortune 500 companies. Our solutions are tailored to fit your specific needs and budget.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What industries do you serve?</h3>
+                    <p>We have experience across 25+ industries including technology, healthcare, finance, manufacturing, retail, and professional services.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is the initial consultation really free?</h3>
+                    <p>Yes! We offer a complimentary 60-minute consultation to understand your challenges and discuss how we can help. There's no obligation to proceed.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you measure success?</h3>
+                    <p>We establish clear KPIs and success metrics at the beginning of each project. We provide regular progress reports and measure ROI to ensure you're getting value.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide ongoing support?</h3>
+                    <p>Yes, we offer various support packages to ensure long-term success. This includes training, monitoring, and optimization services as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Schedule your free consultation today and take the first step toward transforming your business.</p>
+                <a href="#contactForm" class="btn btn-primary btn-large">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>De Oracle</h3>
+                    <p>Founded by Abone Joseph - Transforming businesses through professional excellence and innovative solutions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#strategy">Business Strategy</a></li>
+                        <li><a href="services.html#optimization">Process Optimization</a></li>
+                        <li><a href="services.html#development">Team Development</a></li>
+                        <li><a href="services.html#digital">Digital Transformation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>New York, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@probusiness.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 De Oracle by Abone Joseph. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
