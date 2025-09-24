@@ -1,6 +1,6 @@
 # ProBusiness Solutions - Professional Business Website
 
-A modern, responsive business website for a professional service company built with HTML5, CSS3, and vanilla JavaScript.
+A modern, responsive business website for a professional service company built with React, Vite, and Tailwind CSS.
 
 ## Features
 
@@ -26,35 +26,62 @@ A modern, responsive business website for a professional service company built w
 
 ## Tech Stack
 
+- **React** - Modern JavaScript library for building user interfaces
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **JavaScript (ES6+)** - Modern JavaScript features
 - **HTML5** - Semantic markup and accessibility
-- **CSS3** - Modern styling with Grid, Flexbox, and animations
-- **Vanilla JavaScript** - Interactive functionality without dependencies
-- **Font Awesome** - Professional icons
-- **Google Fonts** - Inter font family
 
 ## File Structure
 
 ```
 Business Website/
-├── index.html          # Homepage
-├── about.html          # About Us page
-├── services.html       # Services page
-├── contact.html        # Contact page
-├── styles.css          # Main stylesheet
-├── script.js           # JavaScript functionality
-├── sitemap.xml         # SEO sitemap
-├── robots.txt          # Search engine guidelines
-└── README.md           # Project documentation
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # GitHub Actions deployment
+├── public/
+│   └── .nojekyll          # GitHub Pages configuration
+├── src/
+│   ├── components/
+│   │   ├── About.jsx      # About section component
+│   │   ├── Contact.jsx    # Contact section component
+│   │   ├── Footer.jsx     # Footer component
+│   │   ├── Hero.jsx       # Hero section component
+│   │   ├── LoadingScreen.jsx # Loading screen component
+│   │   ├── Navbar.jsx     # Navigation component
+│   │   ├── Services.jsx   # Services section component
+│   │   └── Testimonials.jsx # Testimonials component
+│   ├── App.jsx            # Main App component
+│   ├── main.jsx           # React entry point
+│   └── index.css          # Global styles
+├── index.html             # HTML entry point
+├── package.json           # Dependencies and scripts
+├── tailwind.config.js     # Tailwind CSS configuration
+├── vite.config.js         # Vite configuration
+├── sitemap.xml            # SEO sitemap
+├── robots.txt             # Search engine guidelines
+└── README.md              # Project documentation
 ```
 
 ## Setup Instructions
 
-1. **Download/Clone** the project files to your local machine
-2. **Open** `index.html` in a web browser to view the website
-3. **For development**, use a local server (recommended):
-   - Python: `python -m http.server 8000`
-   - Node.js: `npx serve .`
-   - VS Code: Use Live Server extension
+1. **Clone** the repository to your local machine
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start development server**:
+   ```bash
+   npm run dev
+   ```
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+5. **Preview production build**:
+   ```bash
+   npm run preview
+   ```
 
 ## Browser Support
 
@@ -99,28 +126,29 @@ The website uses CSS custom properties for easy color customization:
 ```
 
 ### Content
-- Update company information in all HTML files
-- Replace placeholder contact details with actual information
-- Add real testimonials and team member information
-- Update service descriptions to match your offerings
+- Update company information in React components (`src/components/`)
+- Replace placeholder contact details in `Contact.jsx`
+- Add real testimonials in `Testimonials.jsx`
+- Update service descriptions in `Services.jsx`
 
 ### Images
-- Replace placeholder images with professional stock photos
+- Add images to `public/` folder or import in components
 - Optimize images for web (WebP format recommended)
-- Update alt text for accessibility
+- Update alt text in component JSX for accessibility
 
 ## Deployment
 
-### Static Hosting (Recommended)
-- **Netlify**: Drag and drop the folder
-- **Vercel**: Connect GitHub repository
-- **GitHub Pages**: Push to repository and enable Pages
-- **AWS S3**: Upload files and configure static hosting
+### GitHub Pages (Current Setup)
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions:
 
-### Traditional Hosting
-- Upload all files to your web server's public directory
-- Ensure proper file permissions
-- Update absolute URLs in sitemap.xml and meta tags
+1. **Push to master branch** - Triggers automatic deployment
+2. **GitHub Actions workflow** - Builds the React app and deploys to Pages
+3. **Live site**: https://abonechima.github.io/businesswebsite/
+
+### Other Hosting Options
+- **Netlify**: Connect GitHub repository for automatic deployments
+- **Vercel**: Connect GitHub repository with zero configuration
+- **AWS S3**: Upload built files from `dist/` folder after running `npm run build`
 
 ## Maintenance
 
